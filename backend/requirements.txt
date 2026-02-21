@@ -4,3 +4,9 @@ pydantic
 python-multipart
 aiofiles
 cryptography
+scapy
+python-whois
+dnspython
+reportlab
+psutil
+requests

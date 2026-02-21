@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import crypto, nmap, metasploit
+from app.api import crypto, nmap, metasploit, settings
 
 app = FastAPI(title="CyberTools Backend")
 
@@ -18,3 +18,4 @@ app.add_middleware(
 app.include_router(crypto.router, prefix="/crypto", tags=["crypto"])
 app.include_router(nmap.router, prefix="/nmap", tags=["nmap"])
 app.include_router(metasploit.router, prefix="/metasploit", tags=["metasploit"])
+app.include_router(settings.router, prefix="/settings", tags=["settings"])

@@ -20,8 +20,7 @@ function SettingsSection() {
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
         const { name, value, type } = e.target;
-        // @ts-ignore
-        const val = type === 'checkbox' ? e.target.checked : value;
+        const val = type === 'checkbox' ? (e.target as HTMLInputElement).checked : value;
         setSettings(prev => ({ ...prev, [name]: val }));
     };
 

@@ -10,7 +10,10 @@ import {
     FileSearch,
     KeyRound,
     FileText,
-    Settings
+    Settings,
+    Shield,
+    BrainCircuit,
+    Radar
 } from 'lucide-react';
 
 interface SidebarProps {
@@ -21,6 +24,9 @@ interface SidebarProps {
 function SidebarComponent({ activeTab, changeTab }: SidebarProps) {
   const sidebarItems = [
     { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
+    { id: 'siem', label: 'SIEM Logs', icon: Shield },
+    { id: 'ids', label: 'IDS / IPS Monitor', icon: Radar },
+    { id: 'ai', label: 'Threat Intelligence (AI)', icon: BrainCircuit },
     { id: 'osint', label: 'OSINT / Recon', icon: Search },
     { id: 'nmap', label: 'Scan Nmap', icon: ScanLine },
     { id: 'metasploit', label: 'Metasploit', icon: Fingerprint },

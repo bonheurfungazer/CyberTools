@@ -10,3 +10,7 @@ dnspython
 reportlab
 psutil
 requests
+scikit-learn
+pandas
+watchdog
+numpy

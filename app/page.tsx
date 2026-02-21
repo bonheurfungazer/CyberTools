@@ -14,6 +14,9 @@ import PasswordCrackSection from './components/PasswordCrackSection';
 import CryptoSection from './components/CryptoSection';
 import ReportSection from './components/ReportSection';
 import SettingsSection from './components/SettingsSection';
+import SiemSection from './components/SiemSection';
+import IdsSection from './components/IdsSection';
+import AiSection from './components/AiSection';
 
 function Home() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -25,6 +28,9 @@ function Home() {
         <SidebarComponent activeTab={activeTab} changeTab={setActiveTab} />
         <main className="flex-1 p-6">
           {activeTab === 'dashboard' && <DashboardSection />}
+          {activeTab === 'siem' && <SiemSection />}
+          {activeTab === 'ids' && <IdsSection />}
+          {activeTab === 'ai' && <AiSection />}
           {activeTab === 'osint' && <OsintSection />}
           {activeTab === 'nmap' && <NmapSection />}
           {activeTab === 'metasploit' && <MetasploitSection />}

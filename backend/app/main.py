@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from app.api import crypto, nmap, metasploit, settings, dashboard, osint, webscan, pcap, crack, report
+from app.api import crypto, nmap, metasploit, settings, dashboard, osint, webscan, pcap, crack, report, siem, ids, ai
 
 app = FastAPI(title="CyberTools Backend")
 
@@ -16,6 +16,9 @@ app.add_middleware(
 
 # Inclusion des routes de chaque module
 app.include_router(dashboard.router, prefix="/dashboard", tags=["dashboard"])
+app.include_router(siem.router, prefix="/siem", tags=["siem"])
+app.include_router(ids.router, prefix="/ids", tags=["ids"])
+app.include_router(ai.router, prefix="/ai", tags=["ai"])
 app.include_router(osint.router, prefix="/osint", tags=["osint"])
 app.include_router(nmap.router, prefix="/nmap", tags=["nmap"])
 app.include_router(metasploit.router, prefix="/metasploit", tags=["metasploit"])

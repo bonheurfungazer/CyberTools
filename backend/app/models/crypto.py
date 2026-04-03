@@ -15,3 +15,11 @@ class CryptoActionRequest(BaseModel):
     action: str
     text: str
     shift: Optional[int] = None  # Pour caesar
+
+class RsaEncryptRequest(BaseModel):
+    text: str
+    public_key: str
+
+class RsaDecryptRequest(BaseModel):
+    encrypted_text: str
+    private_key: str

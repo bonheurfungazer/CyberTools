@@ -1,6 +1,20 @@
 "use client";
 
-import { ScanLine, LockKeyhole, Fingerprint, Settings } from 'lucide-react';
+import {
+    LayoutDashboard,
+    ScanLine,
+    Fingerprint,
+    LockKeyhole,
+    Globe,
+    Search,
+    FileSearch,
+    KeyRound,
+    FileText,
+    Settings,
+    Shield,
+    BrainCircuit,
+    Radar
+} from 'lucide-react';
 
 interface SidebarProps {
   activeTab: string;
@@ -9,9 +23,18 @@ interface SidebarProps {
 
 function SidebarComponent({ activeTab, changeTab }: SidebarProps) {
   const sidebarItems = [
-    { id: 'nmap', label: 'Nmap', icon: ScanLine },
+    { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
+    { id: 'siem', label: 'SIEM Logs', icon: Shield },
+    { id: 'ids', label: 'IDS / IPS Monitor', icon: Radar },
+    { id: 'ai', label: 'Threat Intelligence (AI)', icon: BrainCircuit },
+    { id: 'osint', label: 'OSINT / Recon', icon: Search },
+    { id: 'nmap', label: 'Scan Nmap', icon: ScanLine },
     { id: 'metasploit', label: 'Metasploit', icon: Fingerprint },
+    { id: 'webscan', label: 'Web Scanner', icon: Globe },
+    { id: 'pcap', label: 'Pcap Analysis', icon: FileSearch },
+    { id: 'crack', label: 'Password Cracking', icon: KeyRound },
     { id: 'crypto', label: 'Cryptographie', icon: LockKeyhole },
+    { id: 'report', label: 'Rapports', icon: FileText },
     { id: 'settings', label: 'Paramètres', icon: Settings },
   ];
 

@@ -1,0 +1,56 @@
+
+> cybertools@0.1.0 dev
+> next dev --turbopack
+
+   ▲ Next.js 15.3.1 (Turbopack)
+   - Local:        http://localhost:3000
+   - Network:      http://192.168.0.2:3000
+
+ ✓ Starting...
+ ✓ Ready in 2.1s
+ ○ Compiling / ...
+/*! 🌼 daisyUI 5.0.35 */
+ ✓ Compiled / in 5.9s
+ GET / 200 in 6567ms
+ GET / 200 in 131ms
+ GET / 200 in 199ms
+ GET / 200 in 108ms
+ GET / 200 in 149ms
+ GET / 200 in 99ms
+ GET / 200 in 110ms
+ GET / 200 in 125ms
+ GET / 200 in 105ms
+ GET / 200 in 111ms
+ ⨯ [Error: ENOENT: no such file or directory, open '/app/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/app/.next/server/app/page/app-build-manifest.json'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 7.5s
+ ⨯ [Error: ENOENT: no such file or directory, open '/app/.next/static/development/_buildManifest.js.tmp.b6umeijrm8'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/app/.next/static/development/_buildManifest.js.tmp.b6umeijrm8'
+}
+[Error: ENOENT: no such file or directory, open '/app/.next/server/app/page/app-build-manifest.json'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/app/.next/server/app/page/app-build-manifest.json'
+}
+ ⨯ [Error: ENOENT: no such file or directory, open '/app/.next/static/development/_buildManifest.js.tmp.ui1lwq6ok6f'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/app/.next/static/development/_buildManifest.js.tmp.ui1lwq6ok6f'
+}
+[Error: ENOENT: no such file or directory, open '/app/.next/static/development/_buildManifest.js.tmp.4ibkdn0c86d'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/app/.next/static/development/_buildManifest.js.tmp.4ibkdn0c86d'
+}
+[?25h
